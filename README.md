@@ -1,94 +1,69 @@
-<img width="64" src="ydb/docs/_assets/logo.svg" /><br/>
-
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/ydb-platform/ydb/blob/main/LICENSE)
-[![Release](https://img.shields.io/github/v/release/ydb-platform/ydb.svg?style=flat-square)](https://github.com/ydb-platform/ydb/releases)
-[![Discord](https://img.shields.io/discord/1158573985894772827?logo=discord&logoColor=%23fff)](https://discord.gg/R5MvZTESWc)
-
-## YDB
-
-[Website](https://ydb.tech) |
-[Documentation](https://ydb.tech/docs/en/) |
-[Official Repository](https://github.com/ydb-platform/ydb) |
-[Blog](https://blog-redirect.ydb.tech) |
-[YouTube](https://www.youtube.com/c/YDBPlatform) |
-[Discord](https://discord.gg/R5MvZTESWc) |
-[Telegram](https://t.me/ydb_en) |
-[LinkedIn](https://www.linkedin.com/company/ydb-platform) |
-[X](https://x.com/YDBPlatform)
-
-YDB is an open source Distributed SQL Database that combines high availability and scalability with strict consistency and ACID transactions.
-
-[![YDB Product Video](ydb/docs/_assets/ydb-promo-video.png)](https://youtu.be/bxZRUtMAlFI)
-
-## Main YDB Advantages
-
-YDB is designed from scratch as a response to growing demand for scalable interactive web services. Scalability, strict consistency and effective cross-row transactions were a must for such OLTP-like workload. YDB is built by people with strong background in databases and distributed systems, who had an experience of developing No-SQL database and the Map-Reduce system for one of the largest search engines in the world.
-We found that YDB's flexible design allows us to build more services on top of it including persistent queues and virtual block devices.
-
-Basic YDB features:
-
-  - Fault-tolerant configuration that survive disk, node, rack or even datacenter outage;
-  - Horizontal scalability;
-  - Automatic disaster recovery with minimum latency disruptions for applications;
-  - SQL dialect (YQL) for data manipulation and scheme definition;
-  - ACID transactions across multiple nodes and tables with strict consistency.
-
-### Fault-tolerant Configurations
-
-YDB could be deployed in three availability zones. Cluster remains available for both reads and writes during complete outage of a single zone. Availability zones and regions are covered in more detail [in documentation](https://ydb.tech/en/docs/concepts/databases#regions-az).
-
-### Horizontal Scalability
-
-Unlike traditional relational databases YDB [scales out](https://en.wikipedia.org/wiki/Scalability#Horizontal_or_scale_out) providing developers with capability to simply extend cluster with computation or storage resources to handle increasing load. YDB has desaggregated storage and compute layers which allow you to scale storage and compute resources independently.
-
-Current production installations have more than 10,000 nodes, store petabytes of data and handle millions distributed transactions per second.
-
-### Automatic Disaster Recovery
-
-YDB has built-in automatic recovery support to survive a hardware failure. After unpredictable disk, node, rack or even datacenter failure YDB remains fully available for reads and writes and restores required data redundancy automatically.
-
-### Multitenant and Serverless Database
-YDB has support for multitenant and serverless setups. A user can run a YDB cluster and create several databases that share one pool of storage and have different compute nodes. Alternatively a user can run several serverless databases that share one pool of compute resources to utilize them effectively.
-
-## Supported Platforms
-
-### Minimal system requirements
-
-YDB runs on x86 64bit platforms with minimum 8 GB of RAM.
-
-### Operating Systems
-
-We have major experience running production systems on 64-bit x86 machines working under Ubuntu Linux.
-
-For development purposes we test that YDB could be built and run under latest versions of MacOS and Microsoft Windows on a regular basis.
-
-## Getting Started
-
-1. Install YDB using [pre-built executables](https://ydb.tech/en/docs/getting_started/self_hosted/ydb_local), [build it from source](BUILD.md) or [use Docker container](https://ydb.tech/en/docs/getting_started/self_hosted/ydb_docker).
-1. Install [command line interface](https://ydb.tech/en/docs/getting_started/cli) tool to work with scheme and run queries.
-1. Start [local cluster](https://ydb.tech/en/docs/getting_started/self_hosted/ydb_local) or container and run [YQL query](https://ydb.tech/en/docs/yql/reference/) via [YDB CLI](https://ydb.tech/en/docs/getting_started/cli).
-1. Access [Embedded UI](https://ydb.tech/en/docs/maintenance/embedded_monitoring/) via browser for schema navigation, query execution and other database development related tasks.
-1. Run available [example application](https://ydb.tech/en/docs/reference/ydb-sdk/example/go/).
-1. Develop an application using [YDB SDK](https://ydb.tech/en/docs/reference/ydb-sdk/).
-
-## How to Build from Source Code
-* Build server (ydbd) and client (ydb) binaries [from source code](BUILD.md).
-
-## How to Deploy
-
-* Deploy a cluster [using Kubernetes](https://ydb.tech/en/docs/deploy/orchestrated/concepts).
-* Deploy a cluster using [pre-built executables](https://ydb.tech/en/docs/getting_started/self_hosted/ydb_local).
-
-## How to Contribute
-
-We are glad to welcome new contributors!
-
-1. Please read the [contributor's guide](CONTRIBUTING.md).
-2. We can accept your work to YDB after you have signed contributor's license agreement (aka CLA).
-3. Please don't forget to add a note to your pull request, that you agree to the terms of the CLA.
-
-## Success Stories
-
-Take a look at YDB [web site](https://ydb.tech/) for the latest success stories and user scenarios.
-
-
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/ydb-platform/ydb/blob/main/ydb/docs/_assets/logo.svg"><img width="64" src="/ydb-platform/ydb/raw/main/ydb/docs/_assets/logo.svg" style="max-width: 100%;"></a><br></p>
+<p dir="auto"><a href="https://github.com/ydb-platform/ydb/blob/main/LICENSE"><img src="https://camo.githubusercontent.com/db9dfde8049c5d66ba62fde707d2cfb30e26f9f26ff274c3442c0aec1ec410a4/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c6963656e73652d417061636865253230322e302d626c75652e737667" alt="执照" data-canonical-src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" style="max-width: 100%;"></a>
+<a href="https://github.com/ydb-platform/ydb/releases"><img src="https://camo.githubusercontent.com/72ddaf0fc68fb7d4dd706528db8a2c0b6833996ce41f4888838cb140509985a8/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f762f72656c656173652f7964622d706c6174666f726d2f7964622e7376673f7374796c653d666c61742d737175617265" alt="发布" data-canonical-src="https://img.shields.io/github/v/release/ydb-platform/ydb.svg?style=flat-square" style="max-width: 100%;"></a>
+<a href="https://discord.gg/R5MvZTESWc" rel="nofollow"><img src="https://camo.githubusercontent.com/72a8fc5880617625578e5f48302022a2b9653fdd865978d3521155e8cd428e83/68747470733a2f2f696d672e736869656c64732e696f2f646973636f72642f313135383537333938353839343737323832373f6c6f676f3d646973636f7264266c6f676f436f6c6f723d253233666666" alt="不和谐" data-canonical-src="https://img.shields.io/discord/1158573985894772827?logo=discord&amp;logoColor=%23fff" style="max-width: 100%;"></a></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">YDB</font></font></h2><a id="user-content-ydb" class="anchor" aria-label="永久链接：YDB" href="#ydb"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a href="https://ydb.tech" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网站</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">|
+</font></font><a href="https://ydb.tech/docs/en/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">|
+</font></font><a href="https://github.com/ydb-platform/ydb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">官方存储库</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">|
+</font></font><a href="https://blog-redirect.ydb.tech" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">博客</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">|
+ </font></font><a href="https://www.youtube.com/c/YDBPlatform" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">YouTube</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> |
+</font></font><a href="https://discord.gg/R5MvZTESWc" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">不和谐</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">|
+</font></font><a href="https://t.me/ydb_en" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">电报</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">|
+</font></font><a href="https://www.linkedin.com/company/ydb-platform" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">领英</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">|
+ </font></font><a href="https://x.com/YDBPlatform" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">X</font></font></a></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">YDB 是一个开源分布式 SQL 数据库，它将高可用性和可扩展性与严格一致性和 ACID 事务结合在一起。</font></font></p>
+<p dir="auto"><a href="https://youtu.be/bxZRUtMAlFI" rel="nofollow"><img src="/ydb-platform/ydb/raw/main/ydb/docs/_assets/ydb-promo-video.png" alt="YDB产品视频" style="max-width: 100%;"></a></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">YDB主要优势</font></font></h2><a id="user-content-main-ydb-advantages" class="anchor" aria-label="永久链接：YDB 主要优势" href="#main-ydb-advantages"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">YDB 是为了满足对可扩展交互式 Web 服务不断增长的需求而从头开始设计的。可扩展性、严格一致性和有效的跨行事务是这种类似 OLTP 的工作负载所必需的。 YDB 是由具有深厚数据库和分布式系统背景的人创建的，他们拥有为世界上最大的搜索引擎之一开发 No-SQL 数据库和 Map-Reduce 系统的经验。我们发现 YDB 的灵活设计使我们能够在其之上构建更多服务，包括持久队列和虚拟块设备。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">YDB基本功能：</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">容错配置可以承受磁盘、节点、机架甚至数据中心中断；</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">横向可扩展性；</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">自动灾难恢复，最大限度地减少应用程序的延迟中断；</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用于数据操作和方案定义的 SQL 方言 (YQL)；</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">跨多个节点和表的 ACID 事务具有严格的一致性。</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">容错配置</font></font></h3><a id="user-content-fault-tolerant-configurations" class="anchor" aria-label="永久链接：容错配置" href="#fault-tolerant-configurations"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">YDB 可以部署在三个可用区。在单个区域完全中断期间，集群仍可用于读取和写入。</font></font><a href="https://ydb.tech/en/docs/concepts/databases#regions-az" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档中</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">更详细地介绍了可用区和区域</font><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">水平扩展性</font></font></h3><a id="user-content-horizontal-scalability" class="anchor" aria-label="永久链接：水平可扩展性" href="#horizontal-scalability"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">与传统的关系数据库不同，YDB</font></font><a href="https://en.wikipedia.org/wiki/Scalability#Horizontal_or_scale_out" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可以横向扩展</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，为开发人员提供了简单地扩展集群的计算或存储资源的能力，以处理不断增加的负载。 YDB 具有分解的存储和计算层，允许您独立扩展存储和计算资源。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目前的生产安装有超过 10,000 个节点，存储 PB 级数据，每秒处理数百万个分布式事务。</font></font></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">自动灾难恢复</font></font></h3><a id="user-content-automatic-disaster-recovery" class="anchor" aria-label="永久链接：自动灾难恢复" href="#automatic-disaster-recovery"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">YDB 具有内置的自动恢复支持，可以在硬件故障时幸存下来。在发生不可预测的磁盘、节点、机架甚至数据中心故障后，YDB 仍完全可用于读取和写入，并自动恢复所需的数据冗余。</font></font></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">多租户和无服务器数据库</font></font></h3><a id="user-content-multitenant-and-serverless-database" class="anchor" aria-label="永久链接：多租户和无服务器数据库" href="#multitenant-and-serverless-database"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">YDB 支持多租户和无服务器设置。用户可以运行YDB集群并创建多个数据库，这些数据库共享一个存储池并具有不同的计算节点。或者，用户可以运行多个共享一个计算资源池的无服务器数据库，以有效地利用它们。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">支持的平台</font></font></h2><a id="user-content-supported-platforms" class="anchor" aria-label="永久链接：支持的平台" href="#supported-platforms"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">最低系统要求</font></font></h3><a id="user-content-minimal-system-requirements" class="anchor" aria-label="永久链接：最低系统要求" href="#minimal-system-requirements"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">YDB 在具有至少 8 GB RAM 的 x86 64 位平台上运行。</font></font></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">操作系统</font></font></h3><a id="user-content-operating-systems" class="anchor" aria-label="永久链接：操作系统" href="#operating-systems"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们拥有在 Ubuntu Linux 下运行的 64 位 x86 机器上运行生产系统的丰富经验。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">出于开发目的，我们定期测试 YDB 是否可以在最新版本的 MacOS 和 Microsoft Windows 下构建和运行。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">入门</font></font></h2><a id="user-content-getting-started" class="anchor" aria-label="永久链接：开始使用" href="#getting-started"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ol dir="auto">
+<li><font style="vertical-align: inherit;"></font><a href="https://ydb.tech/en/docs/getting_started/self_hosted/ydb_local" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用预构建的可执行文件</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装 YDB </font><font style="vertical-align: inherit;">、</font></font><a href="/ydb-platform/ydb/blob/main/BUILD.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">从源代码构建</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或</font></font><a href="https://ydb.tech/en/docs/getting_started/self_hosted/ydb_docker" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Docker 容器</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装</font></font><a href="https://ydb.tech/en/docs/getting_started/cli" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">命令行界面</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">工具以使用方案并运行查询。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">启动</font></font><a href="https://ydb.tech/en/docs/getting_started/self_hosted/ydb_local" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">本地集群</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或容器并</font><font style="vertical-align: inherit;">通过</font><a href="https://ydb.tech/en/docs/getting_started/cli" rel="nofollow"><font style="vertical-align: inherit;">YDB CLI运行</font></a></font><a href="https://ydb.tech/en/docs/yql/reference/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">YQL 查询</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font><a href="https://ydb.tech/en/docs/getting_started/cli" rel="nofollow"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过浏览器访问</font></font><a href="https://ydb.tech/en/docs/maintenance/embedded_monitoring/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">嵌入式 UI，</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以进行架构导航、查询执行和其他数据库开发相关任务。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">运行可用的</font></font><a href="https://ydb.tech/en/docs/reference/ydb-sdk/example/go/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">示例应用程序</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></li>
+<li><font style="vertical-align: inherit;"></font><a href="https://ydb.tech/en/docs/reference/ydb-sdk/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用YDB SDK</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开发应用程序</font><font style="vertical-align: inherit;">。</font></font></li>
+</ol>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如何从源代码构建</font></font></h2><a id="user-content-how-to-build-from-source-code" class="anchor" aria-label="永久链接：如何从源代码构建" href="#how-to-build-from-source-code"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"></font><a href="/ydb-platform/ydb/blob/main/BUILD.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">从源代码</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">构建服务器 (ydbd) 和客户端 (ydb) 二进制文件</font><font style="vertical-align: inherit;">。</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如何部署</font></font></h2><a id="user-content-how-to-deploy" class="anchor" aria-label="永久链接：如何部署" href="#how-to-deploy"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"></font><a href="https://ydb.tech/en/docs/deploy/orchestrated/concepts" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Kubernetes</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">部署集群</font><font style="vertical-align: inherit;">。</font></font></li>
+<li><font style="vertical-align: inherit;"></font><a href="https://ydb.tech/en/docs/getting_started/self_hosted/ydb_local" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用预构建的可执行文件</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">部署集群</font><font style="vertical-align: inherit;">。</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如何贡献</font></font></h2><a id="user-content-how-to-contribute" class="anchor" aria-label="永久链接：如何贡献" href="#how-to-contribute"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们很高兴欢迎新的贡献者！</font></font></p>
+<ol dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请阅读</font></font><a href="/ydb-platform/ydb/blob/main/CONTRIBUTING.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献者指南</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在您签署贡献者许可协议（又名 CLA）后，我们可以接受您的作品给 YDB。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请不要忘记在您的拉取请求中添加注释，以表明您同意 CLA 的条款。</font></font></li>
+</ol>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">成功的故事</font></font></h2><a id="user-content-success-stories" class="anchor" aria-label="永久链接：成功案例" href="#success-stories"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请访问 YDB</font></font><a href="https://ydb.tech/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网站，</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">了解最新的成功案例和用户场景。</font></font></p>
+</article></div>
